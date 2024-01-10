@@ -1,0 +1,5 @@
+data/trackers/mot_challenge/FISH-train/*
+*/__pycache__/*
+*/*/__pycache__/*
+*/*/*/__pycache__/*
+!data/trackers/mot_challenge/FISH-train/PerfectTracker*
