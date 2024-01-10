@@ -1,0 +1,772 @@
+MotChallenge2DBox
+PerfectTracker
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 222, in eval_sequence
+    data = dataset.get_preprocessed_seq_data(raw_data, cls)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\datasets\mot_challenge_2d_box.py", line 367, in get_preprocessed_seq_data
+    raise(TrackEvalException('Attempting to evaluate using invalid gt classes. '
+trackeval.utils.TrackEvalException: Attempting to evaluate using invalid gt classes. This warning only triggers if preprocessing is performed, e.g. not for MOT15 or where prepropressing is explicitly disabled. Please either check your gt data, or disable preprocessing. The following invalid classes were found in timestep 0: -1
+
+
+
+
+
+MotChallenge2DBox
+PerfectTracker
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 222, in eval_sequence
+    data = dataset.get_preprocessed_seq_data(raw_data, cls)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\datasets\mot_challenge_2d_box.py", line 367, in get_preprocessed_seq_data
+    raise(TrackEvalException('Attempting to evaluate using invalid gt classes. '
+trackeval.utils.TrackEvalException: Attempting to evaluate using invalid gt classes. This warning only triggers if preprocessing is performed, e.g. not for MOT15 or where prepropressing is explicitly disabled. Please either check your gt data, or disable preprocessing. The following invalid classes were found in timestep 0: -1
+
+
+
+
+
+MotChallenge2DBox
+PerfectTracker
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 222, in eval_sequence
+    data = dataset.get_preprocessed_seq_data(raw_data, cls)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\datasets\mot_challenge_2d_box.py", line 367, in get_preprocessed_seq_data
+    raise(TrackEvalException('Attempting to evaluate using invalid gt classes. '
+trackeval.utils.TrackEvalException: Attempting to evaluate using invalid gt classes. This warning only triggers if preprocessing is performed, e.g. not for MOT15 or where prepropressing is explicitly disabled. Please either check your gt data, or disable preprocessing. The following invalid classes were found in timestep 0: -1
+
+
+
+
+
+MotChallenge2DBox
+SimpleReassignTracker
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 222, in eval_sequence
+    data = dataset.get_preprocessed_seq_data(raw_data, cls)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\datasets\mot_challenge_2d_box.py", line 323, in get_preprocessed_seq_data
+    self._check_unique_ids(raw_data)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\datasets\_base_dataset.py", line 315, in _check_unique_ids
+    raise TrackEvalException(exc_str)
+trackeval.utils.TrackEvalException: Tracker predicts the same ID more than once in a single timestep (seq: FISH, frame: 114, ids: 6)
+
+
+
+
+
+MotChallenge2DBox
+SimpleReassignTracker
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 222, in eval_sequence
+    data = dataset.get_preprocessed_seq_data(raw_data, cls)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\datasets\mot_challenge_2d_box.py", line 323, in get_preprocessed_seq_data
+    self._check_unique_ids(raw_data)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\datasets\_base_dataset.py", line 315, in _check_unique_ids
+    raise TrackEvalException(exc_str)
+trackeval.utils.TrackEvalException: Tracker predicts the same ID more than once in a single timestep (seq: FISH, frame: 114, ids: 6)
+
+
+
+
+
+MotChallenge2DBox
+SimpleReassignTracker
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 222, in eval_sequence
+    data = dataset.get_preprocessed_seq_data(raw_data, cls)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\datasets\mot_challenge_2d_box.py", line 323, in get_preprocessed_seq_data
+    self._check_unique_ids(raw_data)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\datasets\_base_dataset.py", line 315, in _check_unique_ids
+    raise TrackEvalException(exc_str)
+trackeval.utils.TrackEvalException: Tracker predicts the same ID more than once in a single timestep (seq: FISH, frame: 114, ids: 6)
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 224, in eval_sequence
+    seq_res[cls][met_name] = metric.eval_sequence(data)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\metrics\hota.py", line 86, in eval_sequence
+    print(t, gt_ids_t, data['tracker_ids'][tracker_ids_t])
+TypeError: only integer scalar arrays can be converted to a scalar index
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 127, in evaluate
+    res['COMBINED_SEQ'][c_cls][metric_name] = metric.combine_sequences(curr_res)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\metrics\hota.py", line 124, in combine_sequences
+    res[field] = self._combine_sum(all_res, field)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\metrics\_base_metric.py", line 58, in _combine_sum
+    return sum([all_res[k][field] for k in all_res.keys()])
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\metrics\_base_metric.py", line 58, in <listcomp>
+    return sum([all_res[k][field] for k in all_res.keys()])
+TypeError: 'NoneType' object is not subscriptable
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 224, in eval_sequence
+    seq_res[cls][met_name] = metric.eval_sequence(data)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+TypeError: HOTA.eval_sequence() missing 1 required positional argument: 'i'
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 225, in eval_sequence
+    seq_res[cls][met_name] = metric.eval_sequence(data)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+TypeError: HOTA.eval_sequence() missing 1 required positional argument: 'i'
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 225, in eval_sequence
+    seq_res[cls][met_name] = metric.eval_sequence(data)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+TypeError: HOTA.eval_sequence() missing 1 required positional argument: 'i'
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 231, in eval_sequence
+    matches[1] = [ids[i] for i in matches[1]]
+TypeError: 'tuple' object does not support item assignment
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 227, in eval_sequence
+    seq_res[cls][met_name], best_matches[cls][met_name] = metric.eval_sequence(data)
+ValueError: too many values to unpack (expected 2)
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 227, in eval_sequence
+    seq_res[cls][met_name], best_matches[cls][met_name] = metric.eval_sequence(data)
+ValueError: too many values to unpack (expected 2)
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 125, in evaluate
+    curr_res = {seq_key: seq_value[c_cls][metric_name] for seq_key, seq_value in res.items() if
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 125, in <dictcomp>
+    curr_res = {seq_key: seq_value[c_cls][metric_name] for seq_key, seq_value in res.items() if
+TypeError: tuple indices must be integers or slices, not str
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 119, in evaluate
+    for frame, (gt, tr) in enumerate(result['best_matches']):
+AttributeError: __enter__
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 118, in evaluate
+    with os.path.join(dataset.get_output_fol(tracker), f"{ds}-{cl}-bestmatch.txt") as f:
+AttributeError: __enter__
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 119, in evaluate
+    with os.path.join(dataset.get_output_fol(tracker), f"{ds}-{cl}-bestmatch.txt") as f:
+AttributeError: __enter__
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 119, in evaluate
+    with os.path.join(dataset.get_output_fol(tracker), f"{ds}-{cl}-bestmatch.txt") as f:
+AttributeError: __enter__
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 119, in evaluate
+    with os.path.join(dataset.get_output_fol(tracker), f"{ds}-{cl}-bestmatch.txt") as f:
+AttributeError: __enter__
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 119, in evaluate
+    with os.path.join(dataset.get_output_fol(tracker), f"{ds}-{cl}-bestmatch.txt", 'w') as f:
+AttributeError: __enter__
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 120, in evaluate
+    if gt == 0:
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 120, in evaluate
+    if not gt:
+ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 122, in evaluate
+    f.write(frame, gt, tr, '\n')
+TypeError: TextIOWrapper.write() takes exactly one argument (4 given)
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 237, in eval_sequence
+    matches[0] = map(lambda i: gts[matches[0][i]], matches[0])
+TypeError: 'tuple' object does not support item assignment
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 279, in eval_sequence
+    seq_res[cls][met_name] = metric.eval_sequence(data)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\metrics\hota.py", line 92, in eval_sequence
+    res['best_matches'][t] = (match_rows + [i for i in gt_ids_t if i not in match_rows], match_cols + [i for i in tracker_ids_t if i not in match_cols])
+ValueError: operands could not be broadcast together with shapes (10,) (0,) 
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 284, in eval_sequence
+    matches[0][i] = gts[matches[0][i]]
+IndexError: list index out of range
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 113, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 286, in eval_sequence
+    matches[1][i] = ids[matches[1][i]]
+IndexError: index 10 is out of bounds for axis 0 with size 10
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 153, in evaluate
+    lines[g][1][-1].append(last_matching[g])
+IndexError: list index out of range
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 152, in evaluate
+    rines[g][-1][0].append(frame - 1)
+NameError: name 'rines' is not defined
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 174, in evaluate
+    for t in change['missed_gt'] - last_changed_tr:
+KeyError: 'missed_gt'
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 166, in evaluate
+    lines[g][-1][1].append(last_matching[g])
+KeyError: 7
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 199, in evaluate
+    for t, l in v:
+TypeError: cannot unpack non-iterable numpy.int32 object
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 200, in evaluate
+    for t, l in v:
+TypeError: cannot unpack non-iterable numpy.int32 object
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 202, in evaluate
+    plt(x, [t] * len(x), color=(127, 127, 127), label='missed')
+TypeError: 'module' object is not callable
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 202, in evaluate
+    plt.plot(x, [t] * len(x), color=(127, 127, 127), label='missed')
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\pyplot.py", line 3578, in plot
+    return gca().plot(
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_axes.py", line 1721, in plot
+    lines = [*self._get_lines(self, *args, data=data, **kwargs)]
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_base.py", line 303, in __call__
+    yield from self._plot_args(
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_base.py", line 539, in _plot_args
+    return [l[0] for l in result]
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_base.py", line 539, in <listcomp>
+    return [l[0] for l in result]
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_base.py", line 532, in <genexpr>
+    result = (make_artist(axes, x[:, j % ncx], y[:, j % ncy], kw,
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_base.py", line 346, in _makeline
+    seg = mlines.Line2D(x, y, **kw)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\lines.py", line 376, in __init__
+    self.set_color(color)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\lines.py", line 1061, in set_color
+    mcolors._check_color_like(color=color)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\colors.py", line 246, in _check_color_like
+    raise ValueError(f"{v!r} is not a valid value for {k}")
+ValueError: (127, 127, 127) is not a valid value for color
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 202, in evaluate
+    plt.plot(x, [t] * len(x), color=(127, 127, 127), label='missed')
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\pyplot.py", line 3578, in plot
+    return gca().plot(
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_axes.py", line 1721, in plot
+    lines = [*self._get_lines(self, *args, data=data, **kwargs)]
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_base.py", line 303, in __call__
+    yield from self._plot_args(
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_base.py", line 539, in _plot_args
+    return [l[0] for l in result]
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_base.py", line 539, in <listcomp>
+    return [l[0] for l in result]
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_base.py", line 532, in <genexpr>
+    result = (make_artist(axes, x[:, j % ncx], y[:, j % ncy], kw,
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_base.py", line 346, in _makeline
+    seg = mlines.Line2D(x, y, **kw)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\lines.py", line 376, in __init__
+    self.set_color(color)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\lines.py", line 1061, in set_color
+    mcolors._check_color_like(color=color)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\colors.py", line 246, in _check_color_like
+    raise ValueError(f"{v!r} is not a valid value for {k}")
+ValueError: (127, 127, 127) is not a valid value for color
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 203, in evaluate
+    for x, y in v:
+TypeError: cannot unpack non-iterable numpy.int32 object
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 204, in evaluate
+    plt.plot(x, y, color=colors[k%len(colors)], label=str(k))
+TypeError: not all arguments converted during string formatting
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 204, in evaluate
+    plt.plot(x, y, color=colors[k%len(colors)], label=f'{k}')
+TypeError: not all arguments converted during string formatting
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 204, in evaluate
+    plt.plot(x, y, color=colors[k%len(colors)], label=f'gt-{k}')
+TypeError: not all arguments converted during string formatting
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 204, in evaluate
+    plt.plot(x, y, color=colors[k % len(colors)], label=f'gt-{k}')
+TypeError: not all arguments converted during string formatting
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 204, in evaluate
+    for x, y in v.items():
+AttributeError: 'list' object has no attribute 'items'
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 210, in evaluate
+    plt.plot(x[:-1], yy, color=colors[k % len(colors)], label=f'gt-{k}')
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\pyplot.py", line 3578, in plot
+    return gca().plot(
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_axes.py", line 1721, in plot
+    lines = [*self._get_lines(self, *args, data=data, **kwargs)]
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_base.py", line 303, in __call__
+    yield from self._plot_args(
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_base.py", line 496, in _plot_args
+    axes.yaxis.update_units(y)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axis.py", line 1706, in update_units
+    converter = munits.registry.get_converter(data)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\units.py", line 190, in get_converter
+    return self.get_converter(first)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\units.py", line 183, in get_converter
+    first = cbook._safe_first_finite(x)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\cbook.py", line 1726, in _safe_first_finite
+    raise RuntimeError("matplotlib does not "
+RuntimeError: matplotlib does not support generators as input
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 206, in evaluate
+    legends.append(a)
+NameError: name 'legends' is not defined
+
+
+
+
+
+MotChallenge2DBox
+Test
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 219, in evaluate
+    plt.legend(handles=legends)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\pyplot.py", line 3372, in legend
+    return gca().legend(*args, **kwargs)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_axes.py", line 322, in legend
+    handles, labels, kwargs = mlegend._parse_legend_args([self], *args, **kwargs)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\legend.py", line 1353, in _parse_legend_args
+    labels = [handle.get_label() for handle in handles]
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\legend.py", line 1353, in <listcomp>
+    labels = [handle.get_label() for handle in handles]
+AttributeError: 'list' object has no attribute 'get_label'
+
+
+
+
+
+MotChallenge2DBox
+ByteTracker-10
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 222, in evaluate
+    plt.xticks(range(0, result['HOTA']['best_matches'] * 51 // 50, result['HOTA']['best_matches'] // 50))
+TypeError: unsupported operand type(s) for //: 'list' and 'int'
+
+
+
+
+
+MotChallenge2DBox
+ByteTracker-10-Simp
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 207, in evaluate
+    legends.append(a)
+UnboundLocalError: local variable 'a' referenced before assignment
+
+
+
+
+
+MotChallenge2DBox
+ByteTracker-10-Simp
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 209, in evaluate
+    legends += a
+UnboundLocalError: local variable 'a' referenced before assignment
+
+
+
+
+
+MotChallenge2DBox
+CustomByteTracker2-20
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 207, in evaluate
+    a, = plt.plot(x, [trids.index(t)] * len(x), color=(1/4, 1/4, 1/4), label='missed')
+ValueError: 1284 is not in list
+
+
+
+
+
+MotChallenge2DBox
+CustomByte-20-AFLink-20
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 225, in evaluate
+    plt.legend(handles=legends)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\pyplot.py", line 3372, in legend
+    return gca().legend(*args, **kwargs)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_axes.py", line 322, in legend
+    handles, labels, kwargs = mlegend._parse_legend_args([self], *args, **kwargs)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\legend.py", line 1353, in _parse_legend_args
+    labels = [handle.get_label() for handle in handles]
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\legend.py", line 1353, in <listcomp>
+    labels = [handle.get_label() for handle in handles]
+AttributeError: 'int' object has no attribute 'get_label'
+
+
+
+
+
+MotChallenge2DBox
+CustomByte-20-AFLink-20
+Traceback (most recent call last):
+  File "C:\Document\Fish\Metrics\TrackEval\trackeval\eval.py", line 225, in evaluate
+    plt.legend(handles=legends)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\pyplot.py", line 3372, in legend
+    return gca().legend(*args, **kwargs)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\axes\_axes.py", line 322, in legend
+    handles, labels, kwargs = mlegend._parse_legend_args([self], *args, **kwargs)
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\legend.py", line 1353, in _parse_legend_args
+    labels = [handle.get_label() for handle in handles]
+  File "C:\ProgramLanguage\Python\Python310\lib\site-packages\matplotlib\legend.py", line 1353, in <listcomp>
+    labels = [handle.get_label() for handle in handles]
+AttributeError: 'int' object has no attribute 'get_label'
+
+
+
+
+

@@ -1,0 +1,1 @@
+python scripts/run_mot_challenge.py --BENCHMARK FISH --SPLIT_TO_EVAL train --TRACKERS_TO_EVAL WorstTracker --METRICS HOTA --USE_PARALLEL False --NUM_PARALLEL_CORES 1 --DO_PREPROC False
