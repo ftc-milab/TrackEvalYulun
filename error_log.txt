@@ -770,3 +770,18 @@ AttributeError: 'int' object has no attribute 'get_label'
 
 
 
+MotChallenge2DBox
+Trainsortma2mh0it007yolo8n200e_dp
+Traceback (most recent call last):
+  File "/work/marioeduardo-a/github/ftc-mario/TrackEvalYulun/trackeval/eval.py", line 114, in evaluate
+    res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
+  File "/work/marioeduardo-a/github/ftc-mario/TrackEvalYulun/trackeval/_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "/work/marioeduardo-a/github/ftc-mario/TrackEvalYulun/trackeval/eval.py", line 350, in eval_sequence
+    for gts, ids, matches in zip(raw_data["gt_ids"], raw_data["tracker_ids"], seq_res[cls]['HOTA']['best_matches']):
+KeyError: 'best_matches'
+
+
+
+
+

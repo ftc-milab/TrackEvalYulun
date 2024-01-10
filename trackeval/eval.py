@@ -114,6 +114,8 @@ class Evaluator:
                                 res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
                                                               metric_names)
                     
+                    ### START OF YULUN CODE
+
                     for ds, re in res.items():
                         for cl, result in re.items():
                             with open(os.path.join(dataset.get_output_fol(tracker), f"{ds}-{cl}-bestmatch.txt"), 'w') as f:
@@ -233,7 +235,7 @@ class Evaluator:
                                     plt.cla()
                                     plt.figure(figsize=(10, 8))
 
-
+                    ### END OF YULUN CODE
 
 
                     # Combine results over all sequences and then over all classes
