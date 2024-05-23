@@ -70,8 +70,18 @@ class Evaluator:
             print('\nEvaluating %i tracker(s) on %i sequence(s) for %i class(es) on %s dataset using the following '
                   'metrics: %s\n' % (len(tracker_list), len(seq_list), len(class_list), dataset_name,
                                      ', '.join(metric_names)))
-
-            # Evaluate each tracker
+            # tracker_list: FISH-mario
+            # seq_list: FISH
+            # class_list: 1
+            
+            
+            # print(type(tracker_list))
+            # print(len(tracker_list))
+            # print(type(tracker_list[0]))
+            # print(tracker_list[0])
+            
+            # exit()
+            # # Evaluate each tracker
             for tracker in tracker_list:
                 # if not config['BREAK_ON_ERROR'] then go to next tracker without breaking
                 try:
@@ -107,19 +117,44 @@ class Evaluator:
                         if show_progressbar and TQDM_IMPORTED:
                             seq_list_sorted = sorted(seq_list)
                             for curr_seq in tqdm.tqdm(seq_list_sorted):
+                                
                                 res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
                                                               metric_names)
                         else:
                             for curr_seq in sorted(seq_list):
+                                print("type(dataset)",type(dataset))
+                                exit()
                                 res[curr_seq] = eval_sequence(curr_seq, dataset, tracker, class_list, metrics_list,
                                                               metric_names)
                     
                     ### START OF YULUN CODE
 
                     for ds, re in res.items():
+                        # ds FISH
+                        # print("ds",ds)
+                        # print("re",re)
+                        # exit()
                         for cl, result in re.items():
-                            with open(os.path.join(dataset.get_output_fol(tracker), f"{ds}-{cl}-bestmatch.txt"), 'w') as f:
-                                with open(os.path.join(dataset.get_output_fol(tracker), f"{ds}-{cl}-changes.txt"), 'w') as c:
+                            # cl pedestrian
+                            # print("cl")
+                            # print(cl)
+                            # print("type",type(result))
+                            # print("keys")
+                            # print(result.keys())
+                            # print("result['Count']")
+                            # print(result['Count'])
+                            # print("result['HOTA']")
+                            # print(type(result['HOTA']))
+                            # print("result['HOTA'] keys")
+                            # print(result['HOTA'].keys())
+                            # print("result['HOTA']['best_matches']")
+                            # print(type(result['HOTA']['best_matches']))
+                            # print(len(result['HOTA']['best_matches']))
+                            # print(result['HOTA']['best_matches'][0])
+                            # exit()
+                            with open(os.path.join(dataset.get_output_fol(tracker), f"{ds}-{cl}-bestmatch.txt"), 'w') as bmf:
+                                with open(os.path.join(dataset.get_output_fol(tracker), f"{ds}-{cl}-changes.txt"), 'w') as chf:
+                                    # best matches
                                     last_matching = {}
                                     last_changed_gt = set([])
                                     last_changed_tr = set([])
@@ -127,18 +162,20 @@ class Evaluator:
                                     trids = set([])
                                     num = 0
                                     plt.figure(figsize=(50, 10))
+                                    # print("result['HOTA']['best_matches']",result['HOTA']['best_matches'])
+                                    # exit()
                                     for frame, (gt, tr) in enumerate(result['HOTA']['best_matches']):
                                         frame += 1
                                         output = False
                                         matching = {}
                                         change = {}
-                                        f.write(f'{frame}')
+                                        bmf.write(f'{frame}')
 
                                         for t in tr:
                                             trids.add(t)
 
                                         for g, t in zip(gt, tr):
-                                            f.write(f' {g}-{t}')
+                                            bmf.write(f' {g}-{t}')
 
                                             matching[g] = t
                                             if g not in last_matching.keys():
@@ -161,7 +198,7 @@ class Evaluator:
                                                 lines[g][-1][0].append(frame)
                                                 lines[g][-1][1].append(t)
                                         
-                                        f.write('\n')
+                                        bmf.write('\n')
 
                                         if len(gt) > len(tr):
                                             change['missed_gt'] = set(gt[len(tr):])
@@ -190,21 +227,27 @@ class Evaluator:
                                         last_matching = matching
 
                                         if output:
-                                            c.write(f'{frame}')
+                                            chf.write(f'{frame}')
                                             for k, v in matching.items():
-                                                c.write(f' {k}-{v}')
-                                            c.write('\n')
+                                                chf.write(f' {k}-{v}')
+                                            chf.write('\n')
                                             for k, v in change.items():
-                                                c.write(f'{k}:')
+                                                chf.write(f'{k}:')
                                                 for i in v:
-                                                    c.write(f'{i},')
-                                                c.write(' ')
-                                            c.write('\n')
-                                    colors = ["r", "b", "g", "y", "m", "c", "orange", "pink", "teal", "brown", "purple"]
+                                                    chf.write(f'{i},')
+                                                chf.write(' ')
+                                            chf.write('\n')
+                                    # colors = ["r", "b", "g", "y", "m", "c", "orange", "pink", "teal", "brown", "purple"]
+                                    colors = [(255, 255, 255),  (95,95,95), (0, 0, 0),#white,gray,black\
+                                                (0, 0, 255), (0, 127, 0), (255, 0, 0), #red,green,blue
+                                                (127, 127, 0), (255, 0, 255), (0, 255, 255), #cyan, magenta, yellow
+                                                (64, 64, 159)]
                                     trids = sorted(list(trids))
                                     legends = []
                                     a = 0
                                     for k, v in lines.items():
+                                        print(k,v)
+                                        exit()
                                         if k == 'missed_tr':
                                             ll = []
                                             for t, l in v.items():

@@ -2,7 +2,9 @@
 
 import os
 
-file="FISH-yulun.txt"
+file="FISH-mario.txt"
+# file="FISH-yulun.txt"
+# file="FISH-mohali.txt"
 TrackerName=file.split(".")[0]
 tracker_folder=f"data/trackers/mot_challenge/FISH-train/{TrackerName}"
 result_folder = os.path.join(tracker_folder, "data")
